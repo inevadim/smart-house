@@ -1,0 +1,17 @@
+.light {
+  width: 22px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  z-index: 5;
+  position: relative;
+}
+
+.lightUnder {
+  position: relative;
+  top: -8px;
+  left: 6px;
+  width: 10px;
+  height: 15px;
+  background-color: rgb(110, 110, 110);
+}
