@@ -16,10 +16,12 @@ export const InputItem = ({ defValue, id }) => {
     dispatch(changeLight(item));
   };
   return (
-    <div>
-      <input onChange={e => setCountInput(e.target.value)} defaultValue={defValue} type="range" />
+    <div className={style.wrap}>
       countInput:{countInput}
-      <div onClick={() => changeInput(id)}>save</div>
+      <input onChange={e => setCountInput(e.target.value)} defaultValue={defValue} type="range" />
+      <div className={style.saveItem} onClick={() => changeInput(id)}>
+        save
+      </div>
       <div style={{ boxShadow: shadowLight }} className={style.light}></div>
       <div className={style.lightUnder}></div>
     </div>

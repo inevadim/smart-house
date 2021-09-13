@@ -1,17 +1,31 @@
-.light {
-  width: 22px;
-  height: 20px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  z-index: 5;
-  position: relative;
-}
+.wrap {
+  display: flex;
+  color: azure;
 
-.lightUnder {
-  position: relative;
-  top: -8px;
-  left: 6px;
-  width: 10px;
-  height: 15px;
-  background-color: rgb(110, 110, 110);
+  .saveItem {
+    margin-left: 15px;
+    cursor: pointer;
+    &:hover {
+      color: rgb(177, 177, 177);
+    }
+  }
+
+  .light {
+    margin-left: 30px;
+    width: 22px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 5;
+    position: relative;
+  }
+
+  .lightUnder {
+    position: relative;
+    top: 12px;
+    left: -16px;
+    width: 10px;
+    height: 15px;
+    background-color: rgb(110, 110, 110);
+  }
 }

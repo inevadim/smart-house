@@ -1,0 +1,8 @@
+.delItem {
+  color: azure;
+  cursor: pointer;
+  width: 40px;
+  &:hover {
+    color: rgb(177, 177, 177);
+  }
+}

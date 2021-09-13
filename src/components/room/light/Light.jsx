@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import style from './Light.module.scss';
 
 import { addLight, deleteLight } from '../../../redux/roomSlice';
 import { InputItem } from './inputItem/InputItem';
@@ -33,7 +34,9 @@ export const Light = () => {
             {item.id}
             <InputItem defValue={item.valueInput} id={item.id} />
 
-            <div onClick={() => deleteInput(item.id)}>delete</div>
+            <div className={style.delItem} onClick={() => deleteInput(item.id)}>
+              delete
+            </div>
             <hr />
           </div>
         );
